@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #fdd835, #ffab91, #ce93d8, #81d4fa); /* Angled gradient with more colors */
+    background-size: 400% 400%; /* For a subtle animated background */
+    animation: gradientAnimation 15s ease infinite; /* Apply animation */
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the container */
+    padding: 30px;
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+  }
+  
+  h1 {
+    color: #3f51b5; /* A primary color for the heading */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+  }
+  
+  p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  button {
+    background-color: #4caf50; /* A vibrant button color */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
